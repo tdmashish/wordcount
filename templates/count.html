@@ -1,0 +1,22 @@
+<h1> you have enter : </h1>
+<h1> "{{ textarea }}"</h1>
+<a href="{% url 'home' %}">home</a>
+<a href="{% url 'aboutus' %}">about us</a>
+<a href="{% url 'contact' %}">contact</a>
+<br>
+<h1>number of text you have entered is = {{ number }}</h1>
+
+
+{{ word_dict }}
+
+
+
+<h1>
+	{% for key , value in word_dict %}
+	{{key}} ={{value}}
+	<br/>
+	
+	{% endfor %}
+
+
+</h1>
